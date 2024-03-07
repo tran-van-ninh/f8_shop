@@ -1,8 +1,3 @@
-#first-heading{
-    color:red ;
-}
-.second-heading{
-
-    color: aqua;
-    font-size: 30;
+.second-heading + .second-heading{
+    color:aqua;
 }
