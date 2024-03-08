@@ -6,28 +6,69 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <style>
-        h1{
-            color:aqua;
+    <style>
+        .box{
+            background-color: aqua;
+            width: 100%;
+            height: 500px;
         }
-    </style> -->
-    <!--
-        Priority: sự ưu tiên
-        1. internal, External
-        2. Inline - 1000
-        3. #id - 100 
-        4. class - 10
-        5. Tag - 1
-        6. Equal specificity
-        7. Universal selector and inherited?
-     -->
+        html{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: brown;" id="first-heading" title="đây là tiêu đề">Css selectors</h1>
-    <h1 class="second-heading">Css selectors</h1>
-    <h1 class="second-heading">Css selectors</h1>
-    <h1 class="second-heading">Css selectors</h1>
-    <h2 class="second-heading">ID & Class?</h2>
+    <div class="box">
+        <div>
+            <h1>CSS units?</h1>
+            <h2>1. Absolute units?</h2>
+            <ul>
+                <li>px</li>
+                
+                <li>pt(%)</li>
+                <div>
+                    <p>phụ thuộc vào thẻ chứa nó</p>
+                </div>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+        </div>
+        <div>
+            <h2>2. Relative?</h2>
+            <ul>
+                <li>%</li>
+                <li>rem</li>
+                    <div>
+                        <p>
+                            Rem phụ thuộc vào thẻ html chứa nó, 
+                        </p>
+                    </div>
+                <li>em</li>
+                    <div>
+                        <p>
+                            kế thừa lại font-size thuộc tính của thằng cha gần nhất
+                        </p>
+                    </div>
+                <li>vw</li>
+                    <div>
+                        vw(viewport - width) độ rộng của trình duyệt
+                    </div>
+                <li>vh</li>
+                    <div>
+                        vh(viewport - height) độ cao của trình duyệt
+                    </div>
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
