@@ -7,57 +7,30 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        *{
-            margin: 0px;
-
+        .box1, .box2, .box3{
+            width:60px;
+            height:60px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        html{
-            font-size: auto;
+        .box1{
+            background-color: black;
         }
-        .box{
-            width:100%;
-            height:120px;
-            background: rgb(215, 205, 205);
-
+        .box2{
+            background-color: orange;
         }
-        .box::after{
-           
-            content: "Xin chào các bạn";
+        .box3{
+            background-color: firebrick;
+            padding:0px 10px;
         }
-        .box:active{
-            background-color: aqua;
-        }
-        
-       .box::before{
-        content: "";
-        display: block;
-        width:50px;
-        height:50px;
-        background-color: #fff;
-       }
-       h1::first-letter{
-        font-size: 35px;
-       }
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <h1>CSS pseudo-elements</h1>
-    <!-- Phần tử giả -->
-    <ul>
-        <li>::before</li>
-        <li>::after</li>
-        <li>::first-letter</li>
-            <p>
-                ký tự đầu tiên bị ảnh hưởng
-            </p>
-        <li>::first-line</li>
-            <p>
-                dòng đầu tiên bị ảnh hưởng
-            </p>
-        <li>::selection</li>
-    </ul>
-    
+    <div class="box1"> box 1</div>
+    <div class="box2"> box 2</div>
+    <div class="box3"> box 3</div>
 </body>
 
 </html>
