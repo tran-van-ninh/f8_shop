@@ -27,42 +27,37 @@
         .box:active{
             background-color: aqua;
         }
-        a::after{
-            /* content: "("attr(href)")"; */
-            content: attr(href);
-        }
-        h1:hover{
-            color:red;
-        }
-        li:first-child,li:last-child{
-            color:red;
-        }
         
+       .box::before{
+        content: "";
+        display: block;
+        width:50px;
+        height:50px;
+        background-color: #fff;
+       }
+       h1::first-letter{
+        font-size: 35px;
+       }
     </style>
 </head>
 <body>
     <div class="box"></div>
-    <h1>CSS pseudo-classes</h1>
-    <!-- Lớp giả -->
+    <h1>CSS pseudo-elements</h1>
+    <!-- Phần tử giả -->
     <ul>
-        <li>:root</li>
-        <li>:hover</li>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
             <p>
-                kích hoạt khi di chuột vào
+                ký tự đầu tiên bị ảnh hưởng
             </p>
-        <li>:active</li>
+        <li>::first-line</li>
             <p>
-                thay đổi một cái gì đó khi ấn chọn chuột vào
+                dòng đầu tiên bị ảnh hưởng
             </p>
-        <li>:first-child</li>
-            <p>
-                lấy phần tử con đầu tiên
-            </p>
-        <li>:last-child </li>
-            <!-- <p>
-                lấy phần tử con cuối cùng
-            </p> -->
+        <li>::selection</li>
     </ul>
+    
 </body>
 
 </html>
