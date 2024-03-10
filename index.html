@@ -12,7 +12,7 @@
 
         }
         html{
-            font-size: 62.5%;
+            font-size: auto;
         }
         .box{
             width:100%;
@@ -21,25 +21,47 @@
 
         }
         .box::after{
+           
             content: "Xin chào các bạn";
+        }
+        .box:active{
+            background-color: aqua;
         }
         a::after{
             /* content: "("attr(href)")"; */
             content: attr(href);
         }
+        h1:hover{
+            color:red;
+        }
+        li:first-child,li:last-child{
+            color:red;
+        }
+        
     </style>
 </head>
 <body>
     <div class="box"></div>
-    <a href="http://fullstack.edu.vn">Học lập trình</a>
-    <h1>CSS function</h1>
+    <h1>CSS pseudo-classes</h1>
+    <!-- Lớp giả -->
     <ul>
-        <li>var()</li>
-        <li>linear-gradient()</li>
-        <li>rgba()</li>
-        <li>rbg()</li>
-        <li>calc()</li>
-        <li>atr()</li>
+        <li>:root</li>
+        <li>:hover</li>
+            <p>
+                kích hoạt khi di chuột vào
+            </p>
+        <li>:active</li>
+            <p>
+                thay đổi một cái gì đó khi ấn chọn chuột vào
+            </p>
+        <li>:first-child</li>
+            <p>
+                lấy phần tử con đầu tiên
+            </p>
+        <li>:last-child </li>
+            <!-- <p>
+                lấy phần tử con cuối cùng
+            </p> -->
     </ul>
 </body>
 
