@@ -10,20 +10,36 @@
        html, body {
         margin:0px;
        }
-       h1{
+       .box{
+        width:100%;
+        height:120px;
+        background-color:#333;
         position: relative;
-        top: 100px;
+       }
+       .box-child{
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        position:absolute;
+        top: 0px;
+        right: 0px;
+       }
+       li:nth-of-type(2){
+        color:violet;
        }
     </style>
 </head>
 <body>
+    <div class="box">
+        <div class="box-child"></div>
+    </div>
     <h1>Position</h1>
     <!-- vị trí -->
     <ul>
         <li>Relative</li>
         <!-- Vị trí tương đối lấy chính mình làm gốc tọa độ không phụ thuộc vào bất kỳ đối tượng nào bên ngoài cả-->
         <li>Absolute</li>
-        <!-- vị trí tuyệt đối -->
+        <!-- vị trí tuyệt đối phụ thuộc vào thẻ cha gần nhất có thuộc tính position lấy thẻ cha đó làm gốc tọa độ-->
         <li>Fixed</li>
         <!-- Vị trí phụ thuộc vào khung trình duyệt  -->
         <li>Sticky</li>
