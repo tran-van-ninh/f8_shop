@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <div id="toast">
+      <!-- Success -->
+      <!-- <div class="toast toast--success">
+        <div class="toast__icon">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div class="toast__body">
+          <h3 class="toast__title">Success</h3>
+          <p class="toast__msg">Hành động đã được thực hiện thành công!</p>
+        </div>
+
+        <div class="toast__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div> -->
+    </div>
     <div>
-      <button class="btn btn--success btn--disabled">GO TO NEXT APPROVAL</button>
-      <button class="btn btn--warn">OK</button>
-      <button class="btn btn--danger">TRY AGAIN</button>
+      <div onclick="Toast()" class="btn btn--success">Show success toast</div>
+      <div class="btn btn--danger">Show error toast</div>
     </div>
   </body>
+  <script>
+    //Toast function
+    function Toast({
+      title = "",
+      message = "",
+      type = "info",
+      duration = 3000,
+    }) {
+      const main = document.getElementById("toast");
+      if (main) {
+        const toast = document.createElement("div");
+        toast.classList.add("toast");
+        toast.innerHTML = `
+        <div class="toast__icon">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div class="toast__body">
+          <h3 class="toast__title">Success</h3>
+          <p class="toast__msg">Hành động đã được thực hiện thành công!</p>
+        </div>
+
+        <div class="toast__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>`;
+      }
+      main.appendChild(toast);
+    }
+  </script>
 </html>
