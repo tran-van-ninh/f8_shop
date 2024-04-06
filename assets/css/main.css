@@ -237,6 +237,7 @@
 
 .header__notify-info {
     margin-left: 12px;
+    
 }
 
 .header__notify-name {
@@ -384,4 +385,25 @@
     -webkit-background-clip: text;
     /* Áp dụng gradient vào phần chữ */
     background-clip: text;
+}
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-from__help-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+
+.auth__help-spearate{
+    display: block;
+    border-left: 1px solid #EAEAEA;
+    height: 22px;
+    margin: 0 16px ;
+}
+.auth-from__help-forgot{
+    color: var(--primary-color);
+
 }
