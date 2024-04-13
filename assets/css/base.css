@@ -249,11 +249,6 @@ html{
     border-radius: 2px;
 }
 
-.pagination-item__icon{
-    
-
-}
-
 .pagination-item--active .pagination-item__link{
     background-color:var(--primary-color);
     color: var(--white-color);
@@ -261,3 +256,4 @@ html{
 .pagination-item--active .pagination-item__link:hover{
     background-color: #ED5C3F;
 }
+
