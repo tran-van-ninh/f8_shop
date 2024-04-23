@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .header__navbar {
@@ -605,7 +605,7 @@
     padding-left: 0;
     list-style: none;
     /* ăn theo tỉ lệ chiều cao trình duyệt */
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: auto;
 }
 
@@ -952,6 +952,51 @@
     line-height: 38px;
     display: block;
 }
+
+.header__sort-bar{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header__sort-bar-height);
+    background-color: var(--white-color);
+    margin: 0;
+    padding-left: 0;
+    border-top:  1px solid #e5e5e5;
+    border-bottom:  1px solid #e5e5e5;
+    display: none;
+    
+}
+
+.header__sort-item{
+    list-style: none;
+    flex: 1;
+}
+
+.header__sort-item:not(:first-child)::after {
+    position: absolute;
+    content: "";
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #e5e5e5;
+  }
+.header__sort-item--active .header__sort-link{
+    color: var(--primary-color);
+}
+
+.header__sort-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    height:100%;
+    line-height: var(--header__sort-bar-height) ;
+    text-align: center;
+}
+
+
+
 /* Ap container */
 /* ! danh mục */
 .app__container{
